@@ -9,6 +9,7 @@ object Dependencies {
         const val graphics = "androidx.compose.ui:ui-graphics:$version"
         const val preview = "androidx.compose.ui:ui-tooling-preview:$version"
         const val material3 = "androidx.compose.material3:material3:1.1.2"
+        const val navigation = "androidx.navigation:navigation-compose:2.7.4"
 
         const val debugUiTooling = "androidx.compose.ui:ui-tooling:$version"
         const val debugUiTestManifest = "androidx.compose.ui:ui-test-manifest:$version"

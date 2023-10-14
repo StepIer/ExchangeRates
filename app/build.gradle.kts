@@ -63,6 +63,7 @@ dependencies {
     implementation(Dependencies.Compose.graphics)
     implementation(Dependencies.Compose.preview)
     implementation(Dependencies.Compose.material3)
+    implementation(Dependencies.Compose.navigation)
 
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.AndroidTest.ext)
