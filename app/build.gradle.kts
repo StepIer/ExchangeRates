@@ -3,6 +3,9 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
+    kotlin("plugin.serialization")
 }
 
 android {
@@ -64,6 +67,27 @@ dependencies {
     implementation(Dependencies.Compose.preview)
     implementation(Dependencies.Compose.material3)
     implementation(Dependencies.Compose.navigation)
+
+    implementation(Dependencies.Hilt.android)
+    implementation(Dependencies.Hilt.composeNavigation)
+
+    implementation(Dependencies.OrbitMVI.compose)
+    implementation(Dependencies.OrbitMVI.viewModel)
+    implementation(Dependencies.OrbitMVI.core)
+
+    implementation(Dependencies.Retrofit.retrofit)
+    implementation(Dependencies.Retrofit.serialization)
+    implementation(Dependencies.Retrofit.okhttp3)
+
+    implementation(Dependencies.Room.runtime)
+    implementation(Dependencies.Room.ktx)
+    annotationProcessor(Dependencies.Room.annotationProcessor)
+    kapt(Dependencies.Room.kapt)
+
+    implementation(Dependencies.serialization)
+
+    kapt(Dependencies.Hilt.compiler)
+    kapt(Dependencies.Hilt.androidCompiler)
 
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.AndroidTest.ext)

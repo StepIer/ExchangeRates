@@ -1,5 +1,7 @@
 package com.example.exchangerates.presentation.ui
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class App: Application()
+@HiltAndroidApp
+class App : Application()

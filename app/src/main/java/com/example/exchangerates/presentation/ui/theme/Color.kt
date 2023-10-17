@@ -9,9 +9,6 @@ object AppColor {
         val onPrimary = Color(0xFFFFFFFF)
         val secondary = Color(0xFF9DACDC)
         val textDefault = Color(0xFF343138)
-        val textSecondary = Color(0xFF767676)
-        val outline = Color(0xFFEBEBEB)
-        val yellow = Color(0xFFFFB800)
     }
 
     object BG {

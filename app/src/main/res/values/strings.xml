@@ -3,4 +3,12 @@
     <string name="currencies">Currencies</string>
     <string name="favorites">Favorites</string>
     <string name="filters">Filters</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="code_a_z">Code A-Z</string>
+    <string name="code_z_a">Code Z-A</string>
+    <string name="quote_asc">Quote Asc.</string>
+    <string name="quote_desc">Quote Desc.</string>
+    <string name="apply">Apply</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="choose_currency">Choose currency</string>
 </resources>

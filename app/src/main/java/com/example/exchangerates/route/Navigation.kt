@@ -10,7 +10,6 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.exchangerates.presentation.currencies.CurrenciesScreen
 import com.example.exchangerates.presentation.favorites.FavoritesScreen
-import com.example.exchangerates.presentation.filters.FiltersScreen
 
 @Composable
 fun Navigation() {
@@ -19,25 +18,16 @@ fun Navigation() {
 
     Column {
         Row(modifier = Modifier.weight(1f)) {
-            NavHost(navController = navController, startDestination = NavigationRoute.ROUTE_CURRENCIES) {
+            NavHost(
+                navController = navController,
+                startDestination = NavigationRoute.ROUTE_CURRENCIES
+            ) {
                 composable(NavigationRoute.ROUTE_CURRENCIES) {
-                    CurrenciesScreen(
-                        navigateToFilters = {
-                            navController.navigate(NavigationRoute.ROUTE_FILTERS)
-                        }
-                    )
+                    CurrenciesScreen()
                 }
 
                 composable(NavigationRoute.ROUTE_FAVORITE) {
                     FavoritesScreen()
-                }
-
-                composable(NavigationRoute.ROUTE_FILTERS) {
-                    FiltersScreen(
-                        navigateBack = {
-                            navController.popBackStack()
-                        }
-                    )
                 }
             }
         }
@@ -50,6 +40,7 @@ fun Navigation() {
                     navController.navigate(NavigationRoute.ROUTE_FAVORITE)
                 }
             )
+
             else -> {
                 //nothing
             }
