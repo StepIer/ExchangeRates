@@ -90,6 +90,9 @@ dependencies {
     kapt(Dependencies.Hilt.androidCompiler)
 
     testImplementation(Dependencies.Test.junit)
+    testImplementation(Dependencies.Test.mockito)
+    testImplementation(Dependencies.Test.coroutinesTest)
+    testImplementation(Dependencies.OrbitMVI.test)
     androidTestImplementation(Dependencies.AndroidTest.ext)
     androidTestImplementation(Dependencies.AndroidTest.ui)
     androidTestImplementation(Dependencies.AndroidTest.espresso)

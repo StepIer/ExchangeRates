@@ -31,6 +31,8 @@ object Dependencies {
         const val core = "org.orbit-mvi:orbit-core:$version"
         const val viewModel = "org.orbit-mvi:orbit-viewmodel:$version"
         const val compose = "org.orbit-mvi:orbit-compose:$version"
+
+        const val test = "org.orbit-mvi:orbit-test:$version"
     }
 
     object Android {
@@ -40,6 +42,8 @@ object Dependencies {
 
     object Test {
         const val junit = "junit:junit:4.13.2"
+        const val mockito = "org.mockito:mockito-core:5.6.0"
+        const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1"
     }
 
     object AndroidTest {
